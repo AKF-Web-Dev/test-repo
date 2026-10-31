@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="field">
+                    <label for="name">
+                        <span class="label-wrap">
+                            <svg class="label-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            Full Name
+                        </span>
+                    </label>
+                    <div class="input-wrap">
+                        <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="email">
+                        <span class="label-wrap">
+                            <svg class="label-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg>
+                            Email
+                        </span>
+                    </label>
+                    <div class="input-wrap">
+                        <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="password">
+                        <span class="label-wrap">
+                            <svg class="label-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 1 1 8 0v3"></path></svg>
+                            Password
+                        </span>
+                    </label>
+                    <div class="input-wrap">
+                        <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"></rect><path d="M8 11V8a4 4 0 1 1 8 0v3"></path></svg>
+                        <input type="password" id="password" name="password" placeholder="Enter password">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="phone">
+                        <span class="label-wrap">
+                            <svg class="label-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.5 12.5 0 0 0 .68 5.34 2 2 0 0 1 1.1 7.2l-1.18 3.39a2 2 0 0 0 .54 2.12l2.2 2.2a2 2 0 0 0 2.12.54l3.39-1.18a2 2 0 0 1 2.14.42 12.5 12.5 0 0 0 5.34.68A2 2 0 0 1 22 16.92z"></path></svg>
+                            Phone Number
+                        </span>
+                    </label>
+                    <div class="input-wrap">
+                        <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.5 12.5 0 0 0 .68 5.34 2 2 0 0 1 1.1 7.2l-1.18 3.39a2 2 0 0 0 .54 2.12l2.2 2.2a2 2 0 0 0 2.12.54l3.39-1.18a2 2 0 0 1 2.14.42 12.5 12.5 0 0 0 5.34.68A2 2 0 0 1 22 16.92z"></path></svg>
+                        <input type="tel" id="phone" name="phone" placeholder="07xxxxxxx">
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="second">
+                <legend>Additional Information</legend>
+
+                <label>Gender</label>
+                <div class="option">
+                    <label>
+                        <input type="radio" name="gender" value="Male">Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Female">Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="Other">Other
+                    </label>
+                </div>
+
+                <label>Hobbies</label>
+                <div class="options">
+                    <label><input type="checkbox" name="hobbies[]" value="Reading">Reading</label>
+                    <label><input type="checkbox" name="hobbies[]" value="Gaming">Gaming</label>
+                    <label><input type="checkbox" name="hobbies[]" value="Sport">Sport</label>
+                    <label><input type="checkbox" name="hobbies[]" value="Music">Music</label>
+                    <label><input type="checkbox" name="hobbies[]" value="Travel">Travel</label>
+                </div>
+
+                <div class="terms">
+                    <label>
+                        <input type="checkbox" name="terms" value="accepted">I agree to the terms and conditions
+                    </label>
+                </div>
+
+                <label for="search">
+                    <span class="label-wrap">
+                        <svg class="label-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+                        Search
+                    </span>
+                </label>
+                <div class="input-wrap">
+                    <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+                    <input type="search" id="search" name="search" placeholder="Search your info">
+                </div>
+            </fieldset>
+
+            <div class="actions">
+                <button type="reset">
+                    <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18"></path><path d="M8 6V4h8v2"></path><path d="M19 6l-1 14H6L5 6"></path><path d="M10 11v6"></path><path d="M14 11v6"></path></svg>
+                    Clear
+                </button>
+                <button type="submit">
+                    <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 9.5 17 19 7.5"></path></svg>
+                    Register
+                </button>
+            </div>
+           
+        </form>
+    </div>
+    
+
+    <script>
+        document.querySelectorAll('.option label, .options label, .terms label').forEach((label) => {
+            const input = label.querySelector('input');
+            if (!input) return;
+
+            label.addEventListener('click', (event) => {
+                if (event.target === input) return;
+                event.preventDefault();
+
+                if (input.type === 'checkbox') {
+                    input.checked = !input.checked;
+                } else if (input.type === 'radio') {
+                    input.checked = true;
+                }
+
+                input.dispatchEvent(new Event('change', { bubbles: true }));
+            });
+        });
+    </script>
+</body>
+</html>
